@@ -7,5 +7,12 @@
 
 import Foundation
 
-print("Hello, World!")
+enum Subject: String, CaseIterable {
+    case cs = "Computer Science"
+    case history = "History"
+    case theology = "Theology"
+}
 
+for subject in Subject.allCases {
+    print("I love \(subject.rawValue)")
+}
