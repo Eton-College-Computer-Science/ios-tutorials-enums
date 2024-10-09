@@ -7,5 +7,10 @@
 
 import Foundation
 
-print("Hello, World!")
+enum Coffee: String {
+    case espresso
+    case americano
+    case flatWhite = "Flat White"
+}
 
+print(Coffee.espresso.rawValue.capitalized)
