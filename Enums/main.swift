@@ -7,5 +7,25 @@
 
 import Foundation
 
-print("Hello, World!")
+enum Coffee: String {
+    case espresso
+    case americano
+    case flatWhite = "Flat White"
+}
 
+enum Size: String {
+    case tall
+    case grande
+    case venti
+    case trenta
+}
+
+
+struct StarbucksOrder {
+    let coffee: Coffee
+    let size: Size
+}
+
+let myOrder = StarbucksOrder(coffee: .flatWhite, size: .grande)
+
+print(myOrder.coffee.rawValue)
