@@ -7,5 +7,10 @@
 
 import Foundation
 
-print("Hello, World!")
+enum Sport {
+    case football
+    case rowing
+    case curling
+}
 
+print(Sport.curling)
